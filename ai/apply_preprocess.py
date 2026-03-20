@@ -17,9 +17,9 @@ def main():
     output_path = "./data/labeled_clean.csv"
 
     df = pd.read_csv(input_path)
-    df = df.dropna(subset=["text", "label"]).copy()
-    df["label"] = df["label"].astype(int)
-    df = df[df["label"].isin([0, 1])].copy()
+    df = df.dropna(subset=["text", "Label"]).copy()
+    df["Label"] = df["Label"].astype(int)
+    df = df[df["Label"].isin([0, 1])].copy()
 
     df["text_norm"] = df["text"].astype(str).apply(preprocess_comment)
     df = df[df["text_norm"].str.len() > 0].copy()

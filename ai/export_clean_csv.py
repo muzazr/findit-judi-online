@@ -5,8 +5,8 @@ from preprocess import preprocess_comment
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 
-INPUT_CSV = os.path.join(PROJECT_DIR, "data", "labeled_raw.csv")
-OUTPUT_CSV = os.path.join(PROJECT_DIR, "data", "labeled_clean.csv")
+INPUT_CSV = os.path.join(PROJECT_DIR,"ai", "data", "labeled_raw.csv")
+OUTPUT_CSV = os.path.join(PROJECT_DIR, "ai", "data", "labeled_clean.csv")
 
 TEXT_COL = "text"
 LABEL_COL = "Label"
