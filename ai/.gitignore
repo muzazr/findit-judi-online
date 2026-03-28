@@ -1,1 +1,2 @@
-model/ 
+echo ai/model/ >> .gitignore
+echo __pycache__/ >> .gitignore
